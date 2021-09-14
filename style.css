@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+html {
+    background-color:black;
+}
+.main {
+  background: rgba(235, 163, 229, 0.924);
+  background: linear-gradient(
+    90deg,
+    rgba(235, 163, 229, 1) 50%,
+    rgb(152, 204, 238) 100%);
+    width: 80vw;
+    height: 70vh;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 10px rgba(236, 234, 234, 0.623);
+    border-radius: 5px;
+    position: relative;
+    top: 20vh;
+  
+}
+
+.box {
+  width: 70vw;
+  height: 50vh;
+  margin: .2em auto;
+  padding: .70em;
+  background-color: white;
+  box-shadow: 10px rgba(236, 234, 234, 0.623);
+  border-radius: 5px;
+  position: relative;
+  top: 8vh;
+}
+
+h1 {
+  text-align: center;
+}
+input {
+  width: 100%;
+  margin: .3em auto;
+}
+
+textarea {
+    max-width: 100%;
+    margin: .3em auto;
+}
+::placeholder {
+  padding: .4em;
+}
+
+.more {
+  display: inline-block;
+  position: relative;
+  left: 40%;
+}
+/* toggle button */
+.switch {
+  position: relative;
+  left: 42%;
+  transform: translate(-50%);
+  display: inline-block;
+  width: 47px;
+  height: 20px;
+  margin: 16px auto;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  right: 4px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.submit {
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
